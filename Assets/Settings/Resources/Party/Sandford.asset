@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b732f3b7470ad04cb37921495ffbad5, type: 3}
+  m_Name: Sandford
+  m_EditorClassIdentifier: 
+  charName: Sandford
+  charClass: Hospitalier
+  gender: Male
+  level: 1
+  exp: 0
+  stats: 1a000000030000000d0000000c000000070000000b0000000a0000000d000000
+  build: 6
+  move: 6
+  statGrowths: 0a000000000000000a000000050000000000000005000000000000000a000000

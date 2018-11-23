@@ -4,7 +4,14 @@ using System.IO;
 using UnityEngine;
 using UnityEditor;
 
-public class PartyAutoConverter : AssetPostprocessor {
+public class PartyAutoConverter : AssetPostprocessor
+{ 
+    
+  [MenuItem("Pre Production/Parse Party")]
+    public static void Parse()
+    {
+        ParseParty();
+    }
 
     static Dictionary<string, Action> parsers;
 
@@ -36,7 +43,7 @@ public class PartyAutoConverter : AssetPostprocessor {
         }
 
         string[] readText = File.ReadAllLines("Assets/Settings/partydata.csv");
-        filePath = "Assets/Settings/Resources";
+        filePath = "Assets/Settings/Resources/Party/";
         for (int i = 1; i < readText.Length; i++)
         {
             PlayerUnit playerUnit = ScriptableObject.CreateInstance<PlayerUnit>();
