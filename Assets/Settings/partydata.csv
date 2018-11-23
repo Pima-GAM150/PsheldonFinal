@@ -1,0 +1,6 @@
+Name,Class,Gender,Level,Exp,HP,Str,Mag,Skl,Spd,Lck,Def,Res,Build,Move,HpGrowth,StrGrowth,MagGrowth,SklGrowth,SpdGrowth,LckGrowth,DefGrowth,ResGrowth
+Leigh,Captain,Female,1,0,18,7,1,4,5,4,5,2,10,5,70,70,5,40,30,40,50,30
+Alix,Trooper,Female,1,0,17,5,2,6,7,4,5,3,11,7,50,55,10,50,45,35,40,30
+Sandford,Hospitalier,Male,1,0,26,3,13,12,7,11,10,13,6,6,10,0,10,5,0,5,0,10
+Yijun,Archer,Male,1,0,14,5,1,5,4,2,4,2,8,5,40,60,15,40,40,25,30,25
+Henriette,Landsknecht,Female,1,0,19,6,2,5,6,3,6,3,10,5,60,45,0,35,40,35,60,20

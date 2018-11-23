@@ -1,28 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.IO;
 
-public class Unit : MonoBehaviour {
+public class Unit{
 
-    public UnitData unitData;
-
-    public void Save()
-    {
-        string json = JsonUtility.ToJson(unitData);
-
-        File.WriteAllText(Application.streamingAssetsPath + "/save.txt", json);
-    }
-
-    public void Load( string json )
-    {
-        unitData = JsonUtility.FromJson<UnitData>(json);
-    }
-}
-
-[System.Serializable]
-public class UnitData
-{
     public string name;
     public string job;
     public int lvl;
@@ -30,7 +11,7 @@ public class UnitData
     public int[] stats = new int[8];
     public int[] statGrowths = new int[8];
 
-    public UnitData()
+    public Unit()
     {
         name = "Sample";
         job = "Sample";
@@ -46,7 +27,7 @@ public class UnitData
         }
     }
 
-    public UnitData(string newName, string newJob, int lvl,
+    public Unit(string newName, string newJob, int lvl, 
         int exp, int[] stats, int[] statGrowths)
     {
         name = newName;
@@ -56,4 +37,5 @@ public class UnitData
         this.stats = stats;
         this.statGrowths = statGrowths;
     }
+
 }
