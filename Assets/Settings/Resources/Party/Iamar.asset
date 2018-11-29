@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b732f3b7470ad04cb37921495ffbad5, type: 3}
+  m_Name: Iamar
+  m_EditorClassIdentifier: 
+  charName: Iamar
+  charClass: Skirmisher
+  gender: Female
+  level: 5
+  exp: 0
+  stats: 160000000700000000000000090000000b000000050000000500000004000000
+  build: 7
+  move: 5
+  statGrowths: 32000000460000000500000032000000460000001e0000001900000014000000

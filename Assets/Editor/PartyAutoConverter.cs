@@ -4,6 +4,7 @@ using System.IO;
 using UnityEngine;
 using UnityEditor;
 
+//This is an editor script for automatically converting an outside asset file into scriptable objects for use.
 public class PartyAutoConverter : AssetPostprocessor
 { 
     

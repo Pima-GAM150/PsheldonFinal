@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b732f3b7470ad04cb37921495ffbad5, type: 3}
+  m_Name: Miria
+  m_EditorClassIdentifier: 
+  charName: Miria
+  charClass: Mage
+  gender: Female
+  level: 4
+  exp: 0
+  stats: 1000000002000000090000000700000006000000050000000100000007000000
+  build: 4
+  move: 5
+  statGrowths: 230000000a000000460000002d0000003200000023000000140000002d000000
