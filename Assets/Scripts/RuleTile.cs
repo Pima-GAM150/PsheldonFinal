@@ -12,5 +12,12 @@ public class RuleTile: Tile {
     public int moveCost;
     public int defBonus;
     public int dodgeBonus;
+
+    public Vector2 center;
+
+    //variables for holding a character, and for pathfinding.
+    public GameObject content;
+    [HideInInspector] public RuleTile prev;
+    [HideInInspector] public int distance;
 	
 }
