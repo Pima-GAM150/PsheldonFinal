@@ -1,0 +1,8 @@
+Name,Type,Rank,Damage,Acc,Crit,Weight,Range
+Iron Sword,Sword,D,6,90,0,7,1
+Iron Axe,Axe,D,10,60,5,9,1
+Iron Spear,Spear,D,8,75,0,8,1
+Iron Bow,Bow,D,8,80,5,8,2
+Ice,Tome,D,4,80,0,3,1|2
+Goetia,Orb,D,6,60,5,4,1|2
+Sol,Conduit,D,7,55,10,6,1|2

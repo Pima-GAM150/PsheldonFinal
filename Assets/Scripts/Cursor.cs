@@ -37,4 +37,9 @@ public class Cursor : MonoBehaviour {
 
         }
 	}
+
+    static void MoveSelected(GameObject selectedObject, RuleTile goal)
+    {
+
+    }
 }
