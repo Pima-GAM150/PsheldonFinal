@@ -35,7 +35,7 @@ public class Cursor : MonoBehaviour {
                         selected = null;
                     }
                 }
-                else if (selected == null || selected.name != hitInfo.transform.gameObject.name)
+                else if ((selected == null || selected.name != hitInfo.transform.gameObject.name) && hitInfo.transform.gameObject.tag =="Unit")
                 {
                     selected = hitInfo.transform.gameObject;
                     Debug.Log("Selected " + selected.name);
