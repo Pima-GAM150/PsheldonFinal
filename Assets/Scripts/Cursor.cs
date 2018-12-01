@@ -19,23 +19,27 @@ public class Cursor : MonoBehaviour {
             RaycastHit2D hitInfo = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
             if (hitInfo.collider != null)
             {
-                if (selected == null || selected.name != hitInfo.transform.gameObject.name)
+                // check if we clicked down on a tilemap that can accept input
+                TilemapInput tilemap = hitInfo.collider.GetComponent<TilemapInput>();
+
+                // if you've selected something already and clicked on a tilemap, then ask the tilemap input to handle where it should be placed
+                if (tilemap && selected != null )
+                {
+                    
+                    if( tilemap ) {
+                        TileInfo closestTileToClick = tilemap.GetClosestTileToPosition( hitInfo.point );
+
+                        // if you want, you can check whether the destination is a valid one here; closestTileToClick.specificTile is a reference to your RuleTile data
+
+                        MoveSelected( selected, closestTileToClick.worldPos );
+                        selected = null;
+                    }
+                }
+                else if (selected == null || selected.name != hitInfo.transform.gameObject.name)
                 {
                     selected = hitInfo.transform.gameObject;
                     Debug.Log("Selected " + selected.name);
                 }
-
-            } else {
-                if (selected != null)
-                {
-                    Debug.Log("Moving " + selected.name);
-                    MoveSelected(selected, Camera.main.ScreenToWorldPoint(Input.mousePosition));
-                    selected = null;
-                } else
-                {
-                    Debug.Log("Nobody to select.");
-                }
-                
             }
 
         }
